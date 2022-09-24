@@ -43,7 +43,7 @@ class WishListItemAdapter(private val wishListItems: List<WishListItem>) : Recyc
         // Set item views based on views and data model
         holder.itemNameView.text = wishListItem.itemName
         holder.itemUrlView.text = wishListItem.itemUrl
-        holder.itemPriceView.text = wishListItem.itemPrice
+        holder.itemPriceView.text = "$" + wishListItem.itemPrice
     }
 
 
